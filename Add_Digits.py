@@ -8,4 +8,3 @@ while(n > 0 or sum > 9):
     sum += n % 10
     n=n//10 
 print (sum)
- 
