@@ -15,4 +15,3 @@ for i in range(x+1,100000):
         y=i
         break
 print(y-x)
-        
