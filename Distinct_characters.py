@@ -1,14 +1,10 @@
 s=input()
-s=s.lower()
-s=list(s)
-a=[]
-for i in s:
-    if s.count(i)==1:
-        a.append(i)
-a.sort()
-x=''
-for i in a:
-    if i==' ':
-        continue
-    x+=i
-print(x)
+t=[]
+r=s.lower()
+for i in r:
+    if i not in t:
+        if i!=' ':
+            t.append(i)
+t.sort()
+for i in t:
+    print(i,end='')
