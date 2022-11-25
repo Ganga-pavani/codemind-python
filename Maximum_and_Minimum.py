@@ -1,14 +1,11 @@
 n=int(input())
 a=list(map(int,input().split()))
-b=[]
-c=0
+x=[]
 for i in a:
     if a.count(i)==i:
-        b.append(i)
-        
-for i in a:
-    if a.count(i)!=i:
-        c+=1
-if c==n:
-    print("-1")
-print(min(b),max(b))
+        x.append(i)
+if x==[]:
+    print(-1)
+else:
+    print(min(*x),end=" ")
+    print(max(*x))
