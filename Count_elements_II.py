@@ -1,0 +1,8 @@
+a,b=map(int,input().split())
+m=list(map(int,input().split()))
+n=list(map(int,input().split()))
+z=set(m)
+y=set(n)
+p=z.union(y)
+q=z.intersection(y)
+print(len(p)-len(q))
