@@ -1,11 +1,14 @@
 s=input()
-s=s.lower()
-b=[]
-for i in s:
-    b.append(i)
-for i in s:
-    if b.count(i)==1:
-        print(i)
+a=0
+for i in range(len(s)):
+    c=0
+    for j in range(len(s)):
+        if i!=j:
+            if s[i]==s[j]:
+                c+=1
+    if c==0:
+        print(s[i])
+        a=1
         break
-else:
-    print(-1)
+if a==0:
+    print("-1")
