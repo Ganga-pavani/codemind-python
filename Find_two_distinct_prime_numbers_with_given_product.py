@@ -1,15 +1,23 @@
 def prime(n):
-    for i in range(2,int(n**0.5)+1):
+    c=0
+    for i in range(2,n):
         if n%i==0:
+            c+=1
             return False
-    else:
+    if c==0:
         return True
 n=int(input())
-a=[]
-for i in range(2,n):
-    if n%i==0 and prime(i):
-        a.append(i)
-if a==[]:
-    print(-1)
-else:
-    print(*a)
+x=0
+for i in range(1,n):
+    if prime(i):
+        for j in range(1,n):
+            if prime(j):
+                if i*j==n:
+                    x=1
+                    print(i,end=" ")
+                    print(j,end=" ")
+                    break
+    if x==1:
+        break
+if x==0:
+    print("-1")
