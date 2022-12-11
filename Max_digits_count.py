@@ -1,15 +1,8 @@
 n=int(input())
 a=list(map(int,input().split()))
-b=0
-for i in a:
-    i=abs(i)
-    i=str(i)
-    if  len(i)>b:
-        b=len(i)
+t=len(str(abs(max(a))))
 c=0
 for i in a:
-    i=abs(i)
-    i=str(i)
-    if len(i)==b:
+    if len(str(abs(i)))==t:
         c+=1
 print(c)
