@@ -1,10 +1,14 @@
 s=input()
-t=[]
-r=s.lower()
-for i in r:
-    if i not in t:
-        if i!=' ':
-            t.append(i)
-t.sort()
-for i in t:
-    print(i,end='')
+s=s.lower()
+s=list(s)
+a=[]
+for i in s:
+    if s.count(i)==1:
+        a.append(i)
+a.sort()
+st='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'
+for i in a:
+    if i==' ':
+        continue
+    st+=i
+print(st)
